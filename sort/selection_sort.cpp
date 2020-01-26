@@ -6,12 +6,11 @@ void SelectionSort(int a[], int n)
 {
     for (int i = 0; i < n; ++i)
     {
-        int min_val = a[i], min_pos = i;
+        int min_pos = i;
         for (int j = i + 1; j < n; ++j)
         {
-            if (a[j] < min_val)
+            if (a[j] < a[min_pos])
             {
-                min_val = a[j];
                 min_pos = j;
             }
         }
